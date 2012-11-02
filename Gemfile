@@ -9,6 +9,7 @@ group :test, :development do
 end
 
 group :development do
+  gem 'rake'
   gem 'simplecov'
   gem 'redcarpet'
 
