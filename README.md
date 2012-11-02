@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/wenzowski/secret-data.png)](http://travis-ci.org/wenzowski/secret-data)
+[![Build Status](https://secure.travis-ci.org/wenzowski/secret_data.png)](http://travis-ci.org/wenzowski/secret_data)
 
 SecretData
 ==========
