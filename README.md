@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/wenzowski/secret-data.png)](http://travis-ci.org/wenzowski/secret-data)
+
 SecretData
 ==========
 
