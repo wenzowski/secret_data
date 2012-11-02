@@ -1,0 +1,4 @@
+---
+description: secret
+nested:
+  another: secret2
