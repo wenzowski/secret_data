@@ -11,6 +11,11 @@ class SecretData
     load_yaml!(opts[:yml_path]) if opts[:yml_path]
   end
 
+  def configure(&block)
+    block.call(self)
+    self
+  end
+
   ##
   # Iterates through each secret and display message pair.
   # 

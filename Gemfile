@@ -5,11 +5,12 @@ gemspec
 
 group :test, :development do
   gem 'rspec'
-  gem 'simplecov'
   gem 'fakefs'
 end
 
 group :development do
+  gem 'rake'
+  gem 'simplecov'
   gem 'redcarpet'
 
   gem 'guard-bundler'
