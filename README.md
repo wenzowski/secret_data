@@ -49,6 +49,11 @@ Configuration via block is also allowed.
     }
 
 
+Changelog
+---------
+
+See {file:changelog.md}.
+
 Contributing
 ------------
 
