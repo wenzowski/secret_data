@@ -55,11 +55,13 @@ class SecretData
 
   def recursive_load(nested_hash, context='')
     nested_hash.each_pair do |key, val|
-      case val
-      when String
-        @secrets[val] = message_for("#{context}#{key}")
-      when Hash
-        recursive_load(val, "#{context}#{key}_")
+      case true
+      when val.respond_to?(:to_hash)
+        recursive_load(val.to_hash, "#{context}#{key}_")
+      when val.respond_to?(:to_s)
+        @secrets[val.to_s] = message_for("#{context}#{key}")
+      else
+        $stderr.puts 'WARN SecretData : Encountered a value that could not be converted to string.'
       end
     end
   end
